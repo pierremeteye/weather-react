@@ -1,6 +1,6 @@
 {
-	"homepage": "https://github.com/pmeteye/weather-react/",
-	"name": "weather",
+	"homepage": "https://pmeteye.github.io/weather-react/",
+	"name": "weather-react",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
