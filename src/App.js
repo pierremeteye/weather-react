@@ -23,7 +23,6 @@ export default class App extends Component {
 		const COUNTRY = e.target.elements.country.value;
 		const API_CALL = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${CITY},${COUNTRY}&units=metric&appid=${API_KEY}`);
 		const data = await API_CALL.json();
-		console.log(data);
 
 		if (CITY && COUNTRY) {
 			this.setState({
@@ -34,7 +33,7 @@ export default class App extends Component {
 				description: data.weather[0].description,
 				error: ''
 			})
-		} else if (data.cod === '404') {
+		} else if (data.cod == 404) {
 			this.setState({
 				temperature : undefined,
 				city: undefined,
